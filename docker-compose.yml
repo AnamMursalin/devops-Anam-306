@@ -1,0 +1,8 @@
+version: '3.8' # most recent version supported by all Compose implementations
+services:
+  web:
+    build: .  # add
+    ports:
+      - '80:80'
+    # image: registry.example.com/myimage  but only if you're planning to push it
+    # no volumes:
